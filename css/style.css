@@ -1,0 +1,391 @@
+/*FONTS*/
+
+@font-face {
+
+font-family: "FuturaPT Demi";
+
+src: url("../fonts/FuturaPT-Demi.ttf") format("truetype");
+src: url("../fonts/FuturaPT-Demi.woff") format("woff");
+    src: url("../fonts/FuturaPT-Demi.eot") format("eot");
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+
+    font-family: "Proxima nova";
+
+    src: url("../fonts/ProximaNova-Regular.ttf") format("truetype");
+    src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+    src: url("../fonts/ProximaNova-Regular.eot") format("eot");
+
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+
+    font-family: "Proxima nova bold";
+
+    src: url("../fonts/ProximaNova_bold.ttf") format("truetype");
+
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+body {
+    position: relative;
+}
+
+.total_wrapper {
+    background: white;
+    position: relative;
+    width: 100%;
+}
+
+
+/*HEADER<<<<<<<<<<<<*/
+.header_holder {
+    position: relative;
+    width: 100%;
+    background: #3d7aec;
+    height: 58px;
+}
+
+header {
+    max-width:1170px;
+    min-width:576px;
+    position: relative;
+    margin: 0 auto;
+/*    display: flex;*/
+}
+
+.head_logo {
+    margin-top: 13px;
+}
+
+.nav_menu {
+    height: 58px;
+   display: flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.dropdown_ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-top: 8px;
+}
+
+.dropdown_ul li {
+    font: 600 15px "FuturaPT Demi", sans-serif;
+    color: white;
+    margin-right: 26px;
+    cursor: pointer;
+    height: 20px;
+}
+
+.dropdown_ul li:hover {
+    text-decoration: underline;
+}
+
+.contact_info {
+    height: 58px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.contact_info_item {
+    font: 600 15px "FuturaPT Demi", sans-serif;
+    color: white;
+}
+
+
+/*DROPDOWN<<<<<<<<<<<<<<<<<<<<*/
+
+.drop_ul {
+    position: absolute;
+    background: #3d7aec;
+    padding:7px 4px;
+    top: 36px;
+    display:none;
+}
+
+.first_drop:hover .drop_ul {
+    display: block;
+}
+
+
+/*
+<<<<<<<<<<<<<<MAIN CONTENT>>>>>>>>>>>*/
+
+.main_content {
+    position: relative;
+    max-width:1170px;
+    min-width:576px;
+    margin: 0 auto;
+}
+
+.article_nav {
+    margin-top: 26px;
+    font: 14px 'Proxima nova', sans-serif;
+    color: #646464;
+}
+
+.article_heading {
+    font:bold 42px "Proxima nova bold", sans-serif;
+    color: #646464;
+    margin-top: 76px;
+}
+
+.share {
+    margin-top: 199px;
+    position: fixed;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.share_head {
+    font:bold 18px "Proxima nova bold", sans-serif;
+    color: #646464;
+}
+
+.news1 {
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+
+
+.article_text {
+    font: 16px 'Proxima nova', sans-serif;
+    color: #000;
+}
+
+.article_text_p1 {
+    margin-bottom: 23px;
+}
+
+.article_text_p2 {
+    margin-bottom: 100px;
+}
+
+.article_heading_bot {
+    display: block;
+    font:bold 34px "Proxima nova bold", sans-serif;
+    color: #646464;
+}
+
+.news3_holder {
+
+}
+
+.mini_news_heading {
+    font:20px 'Proxima nova', sans-serif;
+    color: #646464;
+}
+
+.mini_news_p {
+    font:14px 'Roboto', sans-serif;
+    color: #646464;
+}
+
+.mini_news_a {
+    font:16px 'Proxima nova', sans-serif;
+    color: #3d7aec;
+    text-decoration: underline;
+ /*   margin-bottom: 70px;*/
+}
+
+
+/*
+??????????????? SCALE IMG ???????????*/
+
+
+.scale:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.scale {
+    position: relative;
+     width: 284px;
+    height: 228px;
+    overflow: hidden;
+
+}
+
+.scale img {
+/*    width: 284px;
+    height: 228px;*/
+/*    display: block;*/
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.scale:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+/*>>>>>>>>>>>>>>>>FOOTER*/
+
+.footer {
+
+    position: relative;
+    width: 100%;
+    height: 300px;
+
+}
+
+.infoot {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.foot {
+    background: #3f3f3f;
+    padding-top: 54px;
+}
+
+.foot_p  {
+    color: #cdcdcd;
+    font:12px 'Proxima nova', sans-serif;
+    margin-top: 167px;
+}
+/*
+>>>>>>>>>>>>>>>>>ANTI-BOOTSTRAP>>>>>>>>>>>>>>>>>>>>*/
+
+/*
+.col-lg-4 {
+    width: 350px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.col-lg-2 {
+    width: 300px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.col-lg-6 {
+    width: 390px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}*/
+
+/*.footer {
+    margin-top: 125px;
+}*/
+
+.foot {
+    height: 280px;
+    overflow: hidden;
+}
+
+.footer_heading {
+    font:bold 16px 'Proxima nova', sans-serif;
+    color: #fff;
+    margin-bottom: 23px;
+    margin-top: 4px;
+}
+
+.foot_list li {
+    font:12px 'Proxima nova', sans-serif;
+    color:#cdcdcd;
+    margin-bottom: 13px;
+    /*margin-bottom: 113px;*/
+    cursor: pointer;
+}
+
+.foot_list {
+    margin-bottom: -82px;
+}
+
+
+.f_p2:after {
+content:'';
+    width: 30px;
+    height: 30px;
+    background:  url(../img/kost.png) 0 0 no-repeat;
+/*    display: block*/;
+    position: absolute;
+    top: 244px;
+    left: 132px;
+}
+
+.fb {
+    position: relative;
+    top: 85px;
+}
+
+.button1, .button2 {
+    position: relative;
+    top: 100px;
+    background: transparent;
+    border:1px solid white;
+    color: #ffffff;
+  /*  padding:9px 6px;*/
+    font:10px 'Proxima nova', sans-serif;
+  /*  margin-right: 10px;*/
+}
+
+
+
+
+@media all and (max-width: 1200px)  {
+    .header_holder {
+        height: auto;
+    }
+}
+
+@media all and (max-width: 576px) {
+    header, .main_content {
+        max-width:576px;
+        min-width:300px;
+    }
+
+
+}
+
+
+
+@media all and (max-width: 452px)  {
+    .nav_menu {
+      display: block;
+    }
+
+    .none {
+        display:none;
+    }
+
+    .contact_info {
+        height: calc(auto + 10px);
+        display: flex;
+        flex-direction: column;
+  /*      justify-content:space-between;*/
+        align-items:center;
+    }
+
+    .dropdown_ul li, .dropdown_ul {
+        display: block;
+    }
+}
+
+
